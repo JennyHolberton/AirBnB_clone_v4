@@ -159,8 +159,8 @@ Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://tw
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 
-Pallavi Jagtap - [Github](https://github.com/Pallavi149)
-Jenny Nguyen - [Github](https://github.com/JennyHolberton)
+Pallavi Jagtap - [Github](https://github.com/Pallavi149)\n
+Jenny Nguyen - [Github](https://github.com/JennyHolberton)\n
 Wendy Wu - [Github](https://github.com/wendy-holberton)
 
 Second part of Airbnb: Joann Vuong
