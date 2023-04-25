@@ -6,12 +6,14 @@ from models.city import City
 from models.amenity import Amenity
 from models.place import Place
 from os import environ
+from flask_cors import CORS
 from flask import Flask, render_template
 import uuid
+
+
 app = Flask(__name__)
 # app.jinja_env.trim_blocks = True
 # app.jinja_env.lstrip_blocks = True
-
 
 @app.teardown_appcontext
 def close_db(error):
@@ -35,7 +37,7 @@ def hbnb():
     places = storage.all(Place).values()
     places = sorted(places, key=lambda k: k.name)
 
-    return render_template('1-hbnb.html',
+    return render_template('2-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
                            places=places,
