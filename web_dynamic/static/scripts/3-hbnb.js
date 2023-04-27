@@ -50,5 +50,10 @@ $(document).ready(function () {
 });
 
 function searchPlaces(data) {
-  console.log(data);
+  data.forEach(function(item) {
+    var newArticle = document.createElement("article");
+    var placesSection = document.getElementsByClassName("places")[0];
+    placesSection.appendChild(newArticle);
+    console.log(item);
+  });
 }
