@@ -24,7 +24,7 @@ $(document).ready(function () {
   for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener("change", checkBox);
   }
-  $('button[type="button"]').onclick(function () {
+  $('button[type="button"]').on("click", function () {
     $.post({
       url: 'http://0.0.0.0:5001/api/v1/places_search/',
       data: JSON.stringify({ amenities: amenityIdList }),
