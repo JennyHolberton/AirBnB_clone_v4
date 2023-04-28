@@ -41,7 +41,7 @@ function checkStatus(data) {
 $(document).ready(function () {
   $.post({
     url: 'http://0.0.0.0:5001/api/v1/places_search/',
-    data: JSON.stringify({}),
+    data: JSON.stringify({ amenities: amenityIdList }),
     success: function (data) {
       searchPlaces(data);
     },
@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 
 function searchPlaces(data) {
-  data.forEach(function(item) {
+  data.forEach(function (item) {
     var newArticle = document.createElement("article");
     var placesSection = document.getElementsByClassName("places")[0];
     placesSection.appendChild(newArticle);
