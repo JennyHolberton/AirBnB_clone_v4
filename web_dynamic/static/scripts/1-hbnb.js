@@ -15,11 +15,15 @@ $(document).ready(function() {
         updateH4();
     }
     function updateH4() {
-        var amenityList = amenityIdList.map(function(amenityId) {
-            return $('[data-id="' + amenityId + '"]').data('name');
-          }).join(', ');
-          $("div.amenities h4").text(amenityList);
-        }
+        var amenityList = '';
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                amenityList = amenityList + checkbox.getAttribute('data-amenity') + ', ';
+            }
+        });
+        amenityList = amenityList.slice(0, -2);
+        $("div.amenities h4").text(amenityList);
+    }
     for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].addEventListener("change", checkBox);
     }
